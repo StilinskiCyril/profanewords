@@ -3,7 +3,7 @@ This repo contains the dirtiest words/ phrases known to man. To be used for educ
  //download the json file
  //read file and store in table
  
-        $file = file_get_contents('path to file');
+        $file = file_get_contents(storage_path('path to file'));
         $profane_words = json_decode($file, true);
 
         foreach ($profane_words as $words) {
