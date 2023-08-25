@@ -1,3 +1,4 @@
+This repo contains the dirtiest words/ phrases known to man. To be used for educational purposes only!
 # profanewords
  //download the json file
  //read file and store in table
