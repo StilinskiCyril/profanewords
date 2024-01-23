@@ -1,14 +1,14 @@
-This repo contains the dirtiest words/ phrases known to man. To be used for educational purposes only!
 # profanewords
- //download the json file
- //read file and store in table
+ 1). Download the json file
+ 2). Read the file and store the contents in your database
+ 3). Here's an example using PHP
  
         $file = file_get_contents(storage_path('path to file'));
-        $profane_words = json_decode($file, true);
+        $profaneWords = json_decode($file, true);
 
-        foreach ($profane_words as $words) {
-            foreach ($words as $value){
-                $value_to_store = $value['word'];
-                //sql query here
+        foreach ($profaneWords as $words) {
+            foreach ($words as $item){
+                $valueToStore = $item['word'];
+                // TODO enter query to insert the values in your database table
             }
         }
